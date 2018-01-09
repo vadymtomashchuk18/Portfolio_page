@@ -1,0 +1,201 @@
+body {
+  font-style: 'Sarala', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============== HEADER =============== */
+nav {
+	font-family: cursive;
+  	font-size: 18px;
+}
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-default {
+	background-color: white;
+}
+.navbar-brand {
+	margin: 0;
+	padding: 0 50%;
+}	
+.navbar-brand img {
+	height: 100%;
+	width: auto;
+}
+.nav-item {
+	padding-right: 40px;
+}
+.navbar-default .navbar-nav > li > .active{
+	color: #0277BD;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > li > a:hover ,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #0277BD;
+}
+
+/*---underline animation in header---*/
+.navbar-default .navbar-nav > li > a {
+	display: inline-block;
+	position: relative;
+	color: #64B5F6; 
+	/*text-decoration: none;*/
+}
+.navbar-default .navbar-nav > li > a:before {
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 0;
+	background: #1565C0;
+	transition: width 0.3s ease-in-out;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 10px;
+}
+.navbar-default .navbar-nav > li > a:hover:before {
+	width: 100%;
+	margin-bottom: 10px; 
+}
+
+/*---Animation for toggle button---*/
+.navbar-default	.navbar-toggle {
+	border-radius: 50%;
+	border-color: #80DEEA;
+	border-width: 2px;
+}
+.navbar-default	.navbar-toggle:hover,
+.navbar-default	.navbar-toggle:focus {
+	background-color: #B2DFDB;
+}
+.navbar-default	.navbar-toggle .icon-bar {
+		background-color: #009688;
+		height: 4px
+}
+@media (max-width: 767px) {
+	.navbar-brand {
+		margin: 0;
+		padding: 0 5%;
+	}
+	.navbar-default .navbar-nav > li > a:before {
+		margin-bottom: 0;
+	}
+	.navbar-default .navbar-nav > li > a:hover:before {
+		margin-bottom: 0; 
+	}
+	.navbar-default .navbar-nav > li {
+		line-height: 2.5;
+		font-size: 28px;
+		text-align: center;
+	}
+}
+
+/* ======= Home and Introducing ======= */
+
+.all_page_content .container-fluid{
+	padding: 0;
+}
+.home {
+  /*min-height: 300px;*/
+  top: 0;
+  left: 0;
+  background: #4bb8d2;
+  background: url("../images/hov_14.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.greeting {
+	text-align: center;
+}
+.home h1 {
+	font-size: 3.5em;
+	font-weight: bold;
+	color: white;
+}
+.home h2 {
+	font-size: 1.5em;
+	/*font-family: cursive;*/
+	font-weight: bold;
+}
+@media (max-width: 767px) {
+	.home h1 {
+		font-size: 2.5em;
+	}
+	.home h2 {
+		font-size: 1.2em;
+	}
+}
+@media (max-width: 480px) {
+	.home h1 {
+		font-size: 2em;
+	}
+	.home h2 {
+		font-size: 1em;
+	}
+}
+
+.info_about_me, .projects, .connecting, footer {
+	margin-top: 50px;
+}
+/* ============= About me ============= */
+.info_about_me {
+  	min-height: 400px;
+}
+/* ============= Projects ============= */
+.projects {
+	min-height: 300px;
+}
+/* ============ Contact me ============ */
+.connecting {
+	height: auto;
+	/*margin-bottom: 100px*/
+}
+.connecting button {
+	display: block;
+	margin: auto;
+}
+#contact li {
+	display: inline;
+}
+/*#contact ul > li > .fa {
+    color: blue;
+    border: solid 2px blue;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 48px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}*/
+
+.icon-media-networks .btn:hover {
+	opacity: 0.7;
+}
+/*.fa {
+	font-size: 30px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+}*/
+.fa-facebook {	color: #3B5998;}
+.fa-github {	color: black;}
+.fa-linkedin {	color: #007bb5;}
+.fa-codepen {	color: black;}
+
+/* ============== Footer ============== */
+.footer {
+	padding: 1px 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-color: gray;
+	text-align: center;
+  	line-height: 2.2;
+}
